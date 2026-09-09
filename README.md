@@ -1,4 +1,5 @@
 # NYC Citi Bike Flow Forecasting
+**[Open the live dashboard](https://nyc-citi-bike-flow-forecast.streamlit.app/)**
 
 This project predicts hourly Citi Bike arrivals, departures, and net bike flow
 for New York City neighborhoods. It uses trip history, NYC neighborhood
