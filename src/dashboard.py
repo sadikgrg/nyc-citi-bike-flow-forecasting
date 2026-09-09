@@ -44,12 +44,12 @@ def load_neighborhood_boundaries():
 def main():
     st.set_page_config(page_title= "NYC Citi-Bike Flow Forecast",
                     layout="wide")
-    st.title("NYC Citi Bike neighborhood flow forecast")
-
+    
+    st.title("NYC Citi Bike Flow Forecast - XGBoost Model")
     st.caption(
-        "Explore predicted arrivals, departures, and net bike flow across "
-        "NYC neighborhoods for the next seven days."
-        )
+        "Explore XGBoost based predictions of hourly Citi Bike arrivals, "
+        "departures, and net flow across NYC neighborhoods for the next seven days."
+    )
 
     forecast, weather = load_dashboard_data()
     boundaries = load_neighborhood_boundaries()
@@ -105,7 +105,7 @@ def main():
     )
 
     st.subheader("Neighborhood map")
-    st.plotly_chart(create_map(selected,boundaries,color_by))
+    st.plotly_chart(create_map(selected,boundaries,color_by), width="stretch")
 
     st.subheader("Forecast pattern")
     neighborhood_options = ["All selected neighborhoods"]+ sorted(borough_forecast["nta_name"].unique().tolist())
@@ -122,11 +122,11 @@ def main():
         
         trend_scope = selected_neighborhood
 
-    left, right = st.columns([1.3, 1])
+    left, right = st.columns([1.15, 1.25], gap="large")
     with left:
-        st.plotly_chart(create_demand_trend(trend_data, trend_scope))
+        st.plotly_chart(create_demand_trend(trend_data, trend_scope), width="stretch")
     with right:
-        st.plotly_chart(create_imbalance_ranking(selected))
+        st.plotly_chart(create_imbalance_ranking(selected), width="stretch")
 
     with st.expander("View selected-hour forecast data"):
         detail = selected[

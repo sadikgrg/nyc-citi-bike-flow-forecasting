@@ -27,7 +27,7 @@ def create_map(selected, boundaries, color_by):
         "zoom": 9.5,
         "opacity": 0.69,
         "map_style": "carto-positron",
-        "height": 650
+        "height": 550
     }
 
     if color_by =="Borough":
@@ -123,7 +123,7 @@ def create_imbalance_ranking(selected):
             "Shortage": "#FF2600",
             "Surplus": "#83FD00"
         },
-        text_auto=":,.1f",
+        text_auto=".2f",
         labels={
             "predicted_net_flow": "Predicted net flow",
             "nta_name": "Neighborhood"
