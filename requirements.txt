@@ -1,0 +1,13 @@
+geopandas
+numpy
+openmeteo-requests
+pandas
+plotly
+psycopg2-binary
+requests-cache
+retry-requests
+scikit-learn
+SQLAlchemy
+streamlit
+xgboost
+nbformat>=4.2.0

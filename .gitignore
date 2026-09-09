@@ -1,0 +1,38 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Local caches and databases
+.cache/
+*.sqlite
+*.sqlite3
+*.db
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Large raw Citi Bike datasets
+data/raw/
+
+# Editor settings
+.vscode/
+.idea/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
