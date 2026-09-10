@@ -16,8 +16,8 @@ def download_weather():
     openmeteo = openmeteo_requests.Client(session = retry_session)
     url = "https://api.open-meteo.com/v1/forecast"
     params = {
-	"latitude": 40.71,
-	"longitude": -74,
+	"latitude": 40.730610,
+	"longitude": -73.935242,
 	"hourly": ["temperature_2m", "dew_point_2m", "precipitation", "snowfall", "wind_speed_10m", "weather_code"],
 	"timezone": "America/New_York",
     "forecast_hours": FORECAST_DAYS * 24,
