@@ -6,7 +6,7 @@ from sqlalchemy import text
 from xgboost import XGBRegressor
 from database import get_engine
 
-from model_columns import NUMERIC_FEATURES, CATEGORICAL_FEATURES, MODEL_FEATURES, TARGETS
+from model_columns import NUMERIC_FEATURES, CATEGORICAL_FEATURES, MODEL_FEATURES, TARGETS, apply_categorical_dtypes
 
 
 PROJECT_DIR = Path(__file__).parent.parent
@@ -147,7 +147,7 @@ def main():
     print(f"Loading data from PostgreSQL table: {FEATURE_TABLE}")
     data = load_data()
     data["hour"] = pd.to_datetime(data["hour"])
-    data[CATEGORICAL_FEATURES] =data[CATEGORICAL_FEATURES].astype(str).astype("category")
+    data = apply_categorical_dtypes(data)
     
     print(f"Loaded {len(data):,} rows")
 

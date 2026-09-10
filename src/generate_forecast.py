@@ -6,7 +6,7 @@ from sqlalchemy import text
 from xgboost import XGBRegressor
 
 from database import get_engine
-from model_columns import CATEGORICAL_FEATURES, MODEL_FEATURES, TARGETS
+from model_columns import CATEGORICAL_FEATURES, MODEL_FEATURES, TARGETS, apply_categorical_dtypes
 
 
 PROJECT_DIR = Path(__file__).parent.parent
@@ -133,8 +133,8 @@ def build_forecast_features(weather,neighborhoods, history, weeks):
         grid[f"{target}_historical_average"] = grid[week_columns].mean(axis=1)
         grid = grid.drop(columns=week_columns)
 
-    grid[CATEGORICAL_FEATURES] = grid[CATEGORICAL_FEATURES].astype("str").astype("category")
-    grid = grid.sort_values(["hour", "nta_code"], ignore_index=True)
+        grid = apply_categorical_dtypes(grid)    
+        grid = grid.sort_values(["hour", "nta_code"], ignore_index=True)
 
     return grid
 
