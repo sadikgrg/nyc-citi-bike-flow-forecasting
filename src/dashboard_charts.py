@@ -23,7 +23,7 @@ def create_map(selected, boundaries, color_by):
             "predicted_departures": ":,.1f",
             "predicted_net_flow": ":+,.1f"
         },
-        "center": {"lat": 40.718, "lon": -74},
+        "center": {"lat": 40.7306, "lon": -73.935242},
         "zoom": 9.5,
         "opacity": 0.69,
         "map_style": "carto-positron",
