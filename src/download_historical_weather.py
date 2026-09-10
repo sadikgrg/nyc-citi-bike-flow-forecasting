@@ -34,8 +34,8 @@ def download_weather(start_date, end_date):
     openmeteo = openmeteo_requests.Client(session = retry_session)
     url = "https://archive-api.open-meteo.com/v1/archive"
     params = {
-	"latitude": 40.71,
-	"longitude": -74,
+	"latitude": 40.730610,
+	"longitude": -73.935242,
 	"start_date": start_date,
 	"end_date": end_date,
 	"hourly": ["temperature_2m", "dew_point_2m", "precipitation", "snowfall", "wind_speed_10m", "weather_code"],
