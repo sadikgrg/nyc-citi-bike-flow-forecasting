@@ -6,8 +6,8 @@ from dashboard_charts import create_map, create_demand_trend, create_imbalance_r
 from database import get_engine
 
 
-FORECAST_TABLE = "hourly_neighborhood_forecast"
-WEATHER_TABLE = "hourly_weather_forecast"
+FORECAST_TABLE = "public.hourly_neighborhood_forecast"
+WEATHER_TABLE = "public.hourly_weather_forecast"
 NEIGHBORHOOD_URL = "https://data.cityofnewyork.us/resource/9nt8-h7nd.geojson?$limit=500"
 
 
