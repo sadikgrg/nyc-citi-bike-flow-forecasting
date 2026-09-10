@@ -42,10 +42,10 @@ def load_neighborhood_boundaries():
     return boundaries
 
 def main():
-    st.set_page_config(page_title= "NYC Citi-Bike Flow Forecast",
+    st.set_page_config(page_title= "NYC Citibike Flow Forecast",
                     layout="wide")
     
-    st.title("NYC Citi Bike Flow Forecast - XGBoost Model")
+    st.title("NYC Citibike Flow Forecast - XGBoost Model")
     st.caption(
         "Explore XGBoost based predictions of hourly Citi Bike arrivals, "
         "departures, and net flow across NYC neighborhoods for the next seven days."
