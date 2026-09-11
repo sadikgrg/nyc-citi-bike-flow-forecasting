@@ -2,7 +2,7 @@
 **[Open the live dashboard](https://nyc-citi-bike-flow-forecast.streamlit.app/)**
 
 #### Dashboard Demo
-https://github.com/user-attachments/assets/01925368-e2a2-4e84-99df-8b77282d7366
+[nyc-citi-bike-forecast-dashboard.webm](https://github.com/user-attachments/assets/3333f37e-0079-4b56-800f-82292da86e5c)
 
 
 This project predicts hourly Citi Bike arrivals, departures, and net bike flow
