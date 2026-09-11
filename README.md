@@ -1,6 +1,12 @@
 # NYC Citi Bike Flow Forecasting
 **[Open the live dashboard](https://nyc-citi-bike-flow-forecast.streamlit.app/)**
 
+
+
+https://github.com/user-attachments/assets/501a2cb6-e09e-42f1-b10e-0c22e3b4b24c
+
+
+
 This project predicts hourly Citi Bike arrivals, departures, and net bike flow
 for New York City neighborhoods. It uses trip history, NYC neighborhood
 boundaries, Open-Meteo weather data, PostgreSQL, and XGBoost.
