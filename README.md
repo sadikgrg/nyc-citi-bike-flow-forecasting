@@ -1,7 +1,7 @@
 # NYC Citi Bike Flow Forecasting
 **[Open the live dashboard](https://nyc-citi-bike-flow-forecast.streamlit.app/)**
 
-### Dashboard Demo
+#### Dashboard Demo
 https://github.com/user-attachments/assets/01925368-e2a2-4e84-99df-8b77282d7366
 
 
